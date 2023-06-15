@@ -90,7 +90,7 @@ async def read_item(from_currency: str, to_currency: str, amount: int, token: st
     }
     for_history.append(result)
     return result
-
+# for history
 @app.get("/history")
 async def read_root(token: str = Depends(oauth_scheme)):
     return for_history
